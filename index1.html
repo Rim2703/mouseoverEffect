@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+</head>
+
+<body>
+    <h3>Sorting an array of numbers in Ascending and Descending order</h3>
+    <p>Array Elements: [1, 12, 123, 34, 4545, 232, 9, 0]</p>
+    <button id="asc" onclick="ascendingOrder">Ascending order</button> &nbsp;
+    <button id="dsc" onclick="descendingOrder">Descending order</button>
+    
+    <script>
+        var numArray = [1, 12, 123, 34, 4545, 232, 9, 0]
+         
+        function ascendingOrder(a, b) {
+            return a - b;
+        }
+        numArray.sort(ascendingOrder);
+        document.getElementById("asc").innerHTML = numArray;
+
+        function descendingOrder(a, b) {
+           return b - a;
+        }
+        numArray.sort(descendingOrder);
+        document.getElementById("dsc").innerHTML = numArray;
+
+    </script>
+</body>
+
+</html>
